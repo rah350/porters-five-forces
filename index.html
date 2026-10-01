@@ -213,7 +213,7 @@
     </header>
 
     <section>
-      <h2>1. Updated Industry Intelligence Pipeline Brief</h2>
+      <h2>1. Industry Intelligence Pipeline Brief</h2>
       <div class="table-wrapper">
         <table>
           <thead>
@@ -482,7 +482,7 @@
       </div>
 
       <div class="callout-box">
-        <h3>Overall Read on Industry Attractiveness (3–5 Sentences)</h3>
+        <h3>Overall Read on Industry Attractiveness</h3>
         <p>
           South Korean e-commerce retailing (NAICS 455219) is a <strong>moderately attractive</strong> industry for scaled incumbents, reflected by a composite Five Forces score of 13 out of 25. Substantial capital barriers to entry and weak supplier bargaining power protect incumbent revenue bases, preventing outside entrants from capturing core platform volume. However, industry profitability is constrained by a single dominant force: <strong>intense rivalry among established competitors</strong>, compounded by an industry growth rate that has slowed from over 20% to mid-single digits. Because nearly 70% of national transactions are contested between Coupang, Naver, and traditional retail conglomerates fighting over zero-switching-cost consumers, sustaining operating margins requires continuous capital investment into automated logistics and ecosystem lock-in rather than baseline retail markups.
         </p>
@@ -503,30 +503,59 @@
     </section>
 
     <section>
-      <h2>3. Critical Reflection (250–500 Words)</h2>
+      <h2>3. Critical Reflection</h2>
       <div class="reflection-box">
         <div class="reflection-q">
           <h4>What was hardest to build?</h4>
           <p>
-            Building this Five Forces scoring tool required moving past generic strategic intuition to encode objective, quantifiable evaluation thresholds into a structured algorithmic model. The hardest part to build was reconciling the structural mismatch between standard five forces taxonomy and modern two-sided platform economics. Traditional industrial organization frameworks evaluate buyers as retail purchasers and suppliers as wholesale manufacturers. In an e-commerce ecosystem like Coupang's, third-party merchants simultaneously act as platform suppliers of product assortment and fee-paying platform buyers of advertising, storage, and fulfillment services. Disentangling merchant supplier leverage from end-consumer purchasing power while programmatically scoring qualitative regulatory risks alongside quantitative concentration thresholds proved technically challenging.
+            One slightly difficult part was making my Gemini do what I wanted.
+            It for some reason kept bringing up past conversations I had had with him
+            on a different chat at a different time and that was 
+            annoying. As far as the actual building of the stuff was concerned
+            it was also having a difficult time figuring out what output I wanted. 
+            At first I was trying to make it make a sort of excel workbook similar to the example. 
+            But that wasn't processing for it very well, so then I asked it to
+            make a webpage that housed this information and that worked quite well. 
           </p>
         </div>
 
         <div class="reflection-q">
           <h4>What would you NOT trust this tool to decide?</h4>
           <p>
-            I would specifically not trust this tool to decide whether Coupang should aggressively raise merchant marketplace take-rates or WOW membership subscription fees in 2026. While the model evaluates buyer power at a moderate 3 out of 5 due to fragmented consumer purchasing patterns, it operates on static cross-sectional disclosures. It cannot simulate dynamic churn elasticities or cross-platform merchant flight toward zero-commission promotional environments run by aggressive cross-border entrants like AliExpress and Temu. Deciding platform pricing elasticity requires high-frequency cohort retention metrics, customer lifetime value modeling, and multi-homing regression data that fall entirely outside the structural scope of this tool.
+            I would specifically not trust this tool to decide 
+            whether Coupang should raise its monthly WOW membership fees
+            or increase seller commission rates in 2026. The tool that it built
+            rated buyer power at 3/5 based on high-level disclosures. However,
+            looking at a once-a-year report doesn't tell you how customers
+            react in real time. It cannot forecast whether a price jump will
+            trigger mass cancellations or push marketplace merchants straight to 
+            cheaper competitors like Temu and AliExpress. Real pricing calls depend
+            on detailed churn rates and user retention data, which a high-level Five
+            Forces model wouldn't tell you. 
           </p>
         </div>
 
         <div class="reflection-q">
           <h4>What did it show you that reading the framework could not?</h4>
           <p>
-            Building the tool demonstrated that reading the Five Forces framework creates a deceptive illusion of mutual independence among the forces. In textbook literature, rivalry, barriers to entry, and supplier power are presented as distinct, isolated silos. Modeling Coupang's actual operating numbers revealed that these forces interact dynamically: Coupang's massive $6.5 billion logistics capital expenditure serves as an insurmountable barrier to entry, but that same sunk cost creates immense fixed-cost operating leverage that drives intense rivalry. Furthermore, supplier power is kept low primarily because the threat of entry by foreign platforms forces incumbents to maintain competitive pricing. Quantifying the framework converts abstract strategic concepts into concrete economic trade-offs.
+            Building the tool demonstrated that reading the Five Forces 
+            framework creates a deceptive illusion of mutual 
+            independence among the forces. In textbook literature, 
+            rivalry, barriers to entry, and supplier power are 
+            presented as distinct, isolated silos. Modeling Coupang's 
+            actual operating numbers revealed that these forces interact 
+            dynamically: Coupang's massive $6.5 billion logistics capital 
+            expenditure serves as an insurmountable barrier to entry, 
+            but that same sunk cost creates immense fixed-cost operating 
+            leverage that drives intense rivalry. Furthermore, supplier 
+            power is kept low primarily because the threat of entry by 
+            foreign platforms forces incumbents to maintain competitive 
+            pricing. Making the framework converts abstract 
+            strategic concepts into concrete economic trade-offs.
           </p>
         </div>
 
-        <span class="word-count-badge">Reflection Word Count: 306 words (Rubric compliant: 250–500 words)</span>
+       <!-- <span class="word-count-badge">Reflection Word Count: 306 words (Rubric compliant: 250–500 words)</span> -->
       </div>
     </section>
   </div>
